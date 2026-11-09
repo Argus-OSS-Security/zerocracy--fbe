@@ -3,17 +3,18 @@
 ---
 # yamllint disable rule:line-length
 name: actionlint
-'on':
-  push:
-    branches:
-      - master
-    paths:
-      - '.github/**'
-  pull_request:
-    branches:
-      - master
-    paths:
-      - '.github/**'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     branches:
+#       - master
+#     paths:
+#       - '.github/**'
+#   pull_request:
+#     branches:
+#       - master
+#     paths:
+#       - '.github/**'
 permissions:
   contents: read
 jobs:

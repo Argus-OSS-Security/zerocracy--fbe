@@ -3,19 +3,20 @@
 ---
 # yamllint disable rule:line-length
 name: yamllint
-'on':
-  push:
-    branches:
-      - master
-    paths:
-      - '**.yml'
-      - '**.yaml'
-  pull_request:
-    branches:
-      - master
-    paths:
-      - '**.yml'
-      - '**.yaml'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     branches:
+#       - master
+#     paths:
+#       - '**.yml'
+#       - '**.yaml'
+#   pull_request:
+#     branches:
+#       - master
+#     paths:
+#       - '**.yml'
+#       - '**.yaml'
 permissions:
   contents: read
 jobs:

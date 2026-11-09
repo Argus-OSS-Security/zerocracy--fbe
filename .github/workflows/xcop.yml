@@ -3,23 +3,24 @@
 ---
 # yamllint disable rule:line-length
 name: xcop
-'on':
-  push:
-    paths:
-      - '**.xsl'
-      - '**.xml'
-      - '**.xhtml'
-      - '**.html'
-      - '**.xsd'
-      - '.github/workflows/xcop.yml'
-  pull_request:
-    paths:
-      - '**.xsl'
-      - '**.xml'
-      - '**.xhtml'
-      - '**.html'
-      - '**.xsd'
-      - '.github/workflows/xcop.yml'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     paths:
+#       - '**.xsl'
+#       - '**.xml'
+#       - '**.xhtml'
+#       - '**.html'
+#       - '**.xsd'
+#       - '.github/workflows/xcop.yml'
+#   pull_request:
+#     paths:
+#       - '**.xsl'
+#       - '**.xml'
+#       - '**.xhtml'
+#       - '**.html'
+#       - '**.xsd'
+#       - '.github/workflows/xcop.yml'
 permissions:
   contents: read
 jobs:

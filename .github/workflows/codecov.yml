@@ -3,10 +3,11 @@
 ---
 # yamllint disable rule:line-length
 name: codecov
-'on':
-  push:
-    branches:
-      - master
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     branches:
+#       - master
 permissions:
   contents: read
 jobs:
